@@ -1,0 +1,13 @@
+our config file does not include any references to "origin" remote. That section looks like this:
+
+[remote "origin"]
+    url = git@foo.com:repository.git
+    fetch = +refs/heads/*:refs/remotes/origin/*
+You need to add the remote using git remote add before you can use it.
+
+Share
+Improve this answer
+Follow
+answered Mar 15, 2013 at 18:44
+user avatar
+cheche
